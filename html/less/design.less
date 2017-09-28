@@ -1,0 +1,64 @@
+@import "RESET.less";   
+@import "elements.less";
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext');
+
+body {
+	background:@black;
+	font-family: 'PT Sans Narrow', sans-serif;
+	* {
+		font-family: 'PT Sans Narrow', sans-serif;
+	}
+	*:focus {
+		outline:none;
+	}
+	color:@green;
+}
+
+@white : #FFF;
+@grey : #ababab;
+@black : #272727;
+@red : #932831;
+@green : #6a8429;
+@blue : #284e75;
+ 
+.center {
+	width:100%;
+	max-width:1200px;
+	margin:0 auto;
+	padding:0px 15px;
+}
+
+.bold {
+	font-weight:700;
+}
+
+.wrap {
+	width:100%;
+	overflow-x: hidden;
+}
+
+.center {
+	width:1000px;
+	margin:0 auto;
+}
+
+h1 {
+	font-size:72px;
+	color:@white;
+	.bold;
+	text-transform:uppercase;
+	margin-bottom:30px;
+}
+
+.pr {position:relative;}
+.tac {text-align:center;}
+.tal {text-align:left;}
+.tar {text-align:right;}
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.clearfix:after {
+	content:'';
+	display:block;
+	clear:both;
+}
