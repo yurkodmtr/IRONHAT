@@ -607,6 +607,16 @@ h1 {
 .home {
 	.menu {
 		margin-top:-41px;
+		@media screen and (max-width: 1240px) and (min-width: 768px) {
+			margin-top:80px;
+			.center {
+				width:630px;
+				margin:0 auto;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			margin-top: 60px;
+		}
 		.menu_more_btn {
 			position:absolute;
 			left:0px;
@@ -622,6 +632,10 @@ h1 {
 			&:hover {
 				background:@green;
 			}
+			@media screen and (max-width: 767px) {
+				position:relative;
+				bottom:0px; 
+			}
 		}
 		margin-bottom:100px;
 		.title {
@@ -633,11 +647,22 @@ h1 {
 			width:470px;
 			margin-left:500px;
 			margin-bottom:80px;
+			@media screen and (max-width: 1240px) {
+				margin-left:0px;
+				font-size:42px;
+				margin-bottom:42px;
+			}
+			@media screen and (max-width: 767px) {
+				width:170px;
+			}
 		}
 		.item {
 			position:relative;
 			&__list {
 				margin-left:100px;
+				@media screen and (max-width: 1240px) {
+					margin-left:0px;
+				}
 			}
 			float:left;
 			width:270px;
@@ -645,8 +670,24 @@ h1 {
 			&:last-child {
 				margin-right:0px;
 			}
+			@media screen and (max-width: 1240px) and (min-width: 768px) {
+				width:228px;
+				margin-right:144px;
+				&:first-child {
+					display:none;
+				}
+			}
+			@media screen and (max-width: 767px) {
+				float:none;
+				width:100%;
+				margin-right:0px;	
+				margin-bottom:30px;			
+			}
 			&__title {
 				margin-bottom:30px;
+				@media screen and (max-width: 1240px) and (min-width: 768px) {
+					margin-bottom:17px; 
+				}
 				span {
 					float:left;
 					font-size:36px;
@@ -654,6 +695,9 @@ h1 {
 					.bold;
 					color:@white;
 					text-transform:uppercase;
+					@media screen and (max-width: 1240px) and (min-width: 768px) {
+						font-size:30px;
+					}
 				}
 				b {
 					float:right;
@@ -662,6 +706,9 @@ h1 {
 					line-height:23px;
 					font-weight:400;
 					padding-top:13px;
+					@media screen and (max-width: 1240px) {
+						font-size:18px;
+					}
 				}
 			}
 			&__descr {
@@ -669,6 +716,10 @@ h1 {
 				font-size:21px;
 				line-height:30px;
 				margin-bottom:20px;
+				@media screen and (max-width: 1240px) {
+					font-size:18px;
+					line-height:30px;
+				}
 			}
 			ul {
 				display:table;
@@ -681,11 +732,19 @@ h1 {
 						color:@grey;
 						font-size:21px;
 						line-height:42px;
+						@media screen and (max-width: 1240px) {
+							font-size:18px;
+							line-height:39px;
+						}
 					}
 					&:last-child {
 						text-align:right;
 						font-size:21px;
-						line-height:42px;						
+						line-height:42px;	
+						@media screen and (max-width: 1240px) {
+							font-size:18px;
+							line-height:39px;
+						}					
 						span {
 							color:@white;
 						}

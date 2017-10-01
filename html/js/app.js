@@ -12,9 +12,13 @@ var siteScript = function(){
 		$('body').css('overflow','visible');
 	});
 
-	var homeMenuItemHeight = function(){
-		var maxHeight = 0;
+	var homeMenuItemHeight = function(){		
 		$('.home .menu .item').css('height','auto');
+		if ( $(window).width() < 768 ) {
+			return false;
+		}		
+		
+		var maxHeight = 0;
 		$('.home .menu .item').each(function(){
 			var h = $(this).outerHeight();
 			if ( h > maxHeight ) {
@@ -24,7 +28,7 @@ var siteScript = function(){
 		$('.home .menu .item').css('height', maxHeight + 'px');
 	}
 
-	$(document).ready(function(){
+	$(window).load(function(){
 		homeMenuItemHeight();
 	});
 
