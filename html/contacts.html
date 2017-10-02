@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/main.css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRGD5zBykqlBFqfv1AdY__NOCcP92s6Tc"></script>
+<script type="text/javascript">
+    google.maps.event.addDomListener(window, 'load', init);        
+    function init() {
+        var mapOptions = {
+            zoom: 17,
+            center: new google.maps.LatLng(49.844255, 24.0259703),
+            styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+        };
+        var mapElement = document.getElementById('map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(49.844255, 24.0259703),
+            icon: 'http://belikdesign.com/ironhat/images/google_map_marker.png',
+            map: map
+        });
+    }
+</script>
+
+
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+ <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+ <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+ </a>
+ </div>
+ <![endif]-->
+ 
+<script src="js/app.js"></script>
+ 
+</head>
+<body>
+
+<div class="wrap">
+
+	<header class="header">
+		<div class="center clearfix">
+			<a href="#" class="logo">
+				<img src="images/header_logo.png" alt="">
+			</a>
+			<div class="mobile_nav__open"></div>
+			<ul class="nav">
+				<li class="active">
+					<a href="#">Про паб</a>
+				</li>
+				<li>
+					<a href="#">Меню</a>
+				</li>
+				<li>
+					<a href="#">Кальян</a>
+				</li>
+				<li>
+					<a href="#">Концерты</a>
+				</li>
+				<li>
+					<a href="#">Галерея</a>
+				</li>   
+				<li>
+					<a href="#">Контакти</a>
+				</li>                            
+			</ul>			
+			<figure class="header_img">
+				<img src="images/header_img.png" alt="">
+			</figure>			
+		</div>
+	</header>
+
+	<div class="mobile_nav">
+		<div class="table">
+			<div class="table-cell">
+				<div class="close"></div>
+				<ul>
+					<li class="active">
+						<a href="#">Про паб</a>
+					</li>
+					<li>
+						<a href="#">Меню</a>
+					</li>
+					<li>
+						<a href="#">Кальян</a>
+					</li>
+					<li>
+						<a href="#">Концерты</a>
+					</li>
+					<li>
+						<a href="#">Галерея</a>
+					</li>   
+					<li>
+						<a href="#">Контакти</a>
+					</li>                            
+				</ul>	
+			</div>
+		</div>
+	</div>
+
+	<div class="content contacts">
+		
+		<div class="center">
+			<h1>Наші контакти</h1>
+
+			<div class="map__wrapper">
+				<div class="label">
+					Приходь
+				</div>
+				<div id="map"></div>
+			</div>
+		</div>
+		
+
+	</div>	
+
+	<footer class="footer">
+		<div class="footer__bottom">
+			<div class="center clearfix">
+				<div class="left copy">
+					&copy; 2017 Zalizna-shapka. <br> Всі права захищені
+				</div>
+				<div class="right by">
+					Розробка сайту - <a href="http://belikdesign.com/" target="_blank">Belikdesign.com</a>
+				</div> 
+			</div>
+		</div>
+	</footer>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
