@@ -31,7 +31,7 @@ body {
 	margin:0 auto;
 	padding:0px 15px;
 	@media screen and (max-width: 1240px) and (min-width: 768px) {
-		width:768px;
+		width:738px;
 	}
 	@media screen and (max-width: 767px) {
 		width:320px;
@@ -44,6 +44,7 @@ body {
 
 .wrap {
 	width:100%;
+	overflow-x: hidden;
 }
 
 /* 
@@ -86,7 +87,7 @@ h1 {
 		}
 		@media screen and (max-width: 1240px) and (min-width: 768px) {
 			width:280px; 
-			margin-right:335px;
+			margin-right:315px;
 		}
 		@media screen and (max-width: 767px){
 			float:left;
@@ -635,6 +636,8 @@ h1 {
 			@media screen and (max-width: 767px) {
 				position:relative;
 				bottom:0px; 
+				display:inline-block;
+				margin-top:50px;
 			}
 		}
 		margin-bottom:100px;
@@ -755,6 +758,132 @@ h1 {
 							font-weight:400;
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+/* story */
+.home {
+	.story {
+		.center {
+			@media screen and (max-width: 767px) {
+				padding:0px;
+			}
+		}
+		padding-bottom:108px;
+		@media screen and (max-width: 1240px) and (min-width: 768px) {
+			padding-bottom:80px;
+		}
+		.block {
+			width:360px;
+			margin:0 auto;
+			background:@green;
+			color:@white;
+			padding:36px 45px 47px 45px;
+			position:relative;
+			@media screen and (max-width: 1240px) and (min-width: 768px) {
+				width:300px;
+				padding:40px 30px 47px 30px;
+			}
+			@media screen and (max-width: 767px) {
+				width:100%;
+				padding:30px 30px 560px 30px;
+				margin-top:450px;
+			}
+			.title {
+				font-size:45px;
+				line-height:48px;
+				text-transform:uppercase;
+				.bold;
+				margin-bottom:48px;
+				@media screen and (max-width: 1240px) {
+					font-size:42px;
+					margin-bottom:33px;
+				}
+			}
+			.descr {
+				font-size:21px;
+				line-height:30px;
+				margin-bottom:45px;
+				@media screen and (max-width: 1240px) {
+					font-size:18px;
+					line-height:24px;
+					margin-bottom:36px;
+				}
+			}
+			.more {
+				font-size:21px;
+				text-transform:uppercase;
+				.bold;
+				color:@white;
+				text-decoration:none;
+				&:hover {
+					text-decoration:underline;
+				}
+			}
+			&:before {
+				content:'';
+				display:block;
+				width:426px;
+				height:801px;
+				position:absolute;
+				right:100%;
+				bottom:150px;
+				background:url(../images/story_branch.png) no-repeat top center;
+				@media screen and (max-width: 1240px) and (min-width: 768px) {
+					width:225px;
+					height:423px;
+					right:100%;
+					top:-4px;
+					bottom:auto;
+					background-image:url(../images/story_branch.png);
+					background-position: center center;
+				    background-repeat: no-repeat;
+				    -webkit-background-size: cover;
+				    -moz-background-size: cover;
+				    -o-background-size: cover;
+				    background-size: cover;	
+				}
+				@media screen and (max-width: 767px) {
+					width:225px;
+					height:423px;
+					right:0;
+					top:-400px;
+					bottom:auto;
+					background-image:url(../images/story_branch.png);
+					background-position: center center;
+				    background-repeat: no-repeat;
+				    -webkit-background-size: cover;
+				    -moz-background-size: cover;
+				    -o-background-size: cover;
+				    background-size: cover;	
+				}
+			}
+			&:after {
+				content:'';
+				display:block;
+				width:383px;
+				height:903px;
+				position:absolute;
+				right:-340px;
+				bottom:-227px;
+				background:url(../images/story_hero_large.png) no-repeat top center;
+				@media screen and (max-width: 1240px) and (min-width: 768px) {
+					width:230px;
+					height:611px;
+					right:-230px;
+					bottom:-40px;
+					background:url(../images/story_hero_tablet.png) no-repeat top center;
+				}
+				@media screen and (max-width: 767px) {
+					width:290px;
+					height:574px;
+					left:0px;
+					right:auto;
+					bottom:-50px;
+					background:url(../images/story_hero_phone.png) no-repeat top center;
 				}
 			}
 		}
