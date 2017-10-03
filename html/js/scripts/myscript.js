@@ -1,13 +1,13 @@
 "use strict";
 
-var siteScript = function(){
+var siteScript = function(){ 
 
 	$('.mobile_nav__open').click(function(){
 		$('.mobile_nav').fadeIn();
 		$('body').css('overflow','hidden');
 	});
 
-	$('.mobile_nav .close').click(function(){
+	$('.mobile_nav .close').click(function(){ 
 		$('.mobile_nav').fadeOut();
 		$('body').css('overflow','visible');
 	});

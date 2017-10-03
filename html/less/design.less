@@ -380,7 +380,7 @@ h1 {
 }
 
 /* home page */
-/* welcome */
+/* home welcome */
 .home {
 	.welcome {
 		margin-top:-50px;
@@ -443,7 +443,7 @@ h1 {
 	}
 }
 
-/* event */
+/* home event */
 .home {
 	.event {
 		@media screen and (max-width: 767px){
@@ -604,7 +604,7 @@ h1 {
 	}
 }
 
-/* menu */
+/* home menu */
 .home {
 	.menu {
 		margin-top:-41px;
@@ -764,7 +764,7 @@ h1 {
 	}
 }
 
-/* story */
+/* home story */
 .home {
 	.story {
 		.center {
@@ -890,6 +890,165 @@ h1 {
 	}
 }
 
+/* concerts */
+.concerts {
+	.item {
+		text-decoration:none;
+		display:block;
+		float:left;
+		width:570px;
+		margin-right:30px;
+		margin-bottom:110px;
+		&:nth-child(2n) {
+			margin-right:0px;
+		}
+		.date {
+			margin-left:100px;
+			margin-bottom:59px;
+			position:relative;
+			&__top {
+				font-size:21px;
+				line-height:23px;
+				.bold;
+				text-transform:uppercase;
+				color:@green;
+				span {
+					color:@white;
+					.bold;
+				}
+			}
+			&__bottom {
+				font-size:72px;
+				line-height:72px;
+				.bold;
+				text-transform:uppercase;
+				color:@green;
+			}
+			&:before {
+				content:'';
+				display:block;
+				width:4px;
+				height:68px;
+				position:absolute;
+				left:5px;
+				bottom:-80px;
+				background: @green;
+			}
+		}
+		figure {
+			display:block;
+			height:272px;
+			margin-bottom:25px;
+			background-position: center center;
+		    background-repeat: no-repeat;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;			    
+		}
+		.title {
+			font-size:36px;
+			color:@white;
+			.bold;
+			margin-left:100px;
+		}
+	}
+}
+
+/* gallery */
+.gallery { 
+	.item {
+		&__list {
+			padding-bottom:40px;
+		}
+		text-decoration:none;
+		float:left;
+		width:370px;
+		margin-right:30px;
+		margin-bottom:60px;
+		&:nth-child(3n) {
+			margin-right:0px;
+		}
+		figure {
+			display:block;
+			height:250px;
+			margin-bottom:22px;
+			background-position: center center;
+		    background-repeat: no-repeat;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;	
+		    .transition(0.2s);
+
+		    filter: grayscale(100%);
+		    -webkit-filter: grayscale(100%);
+		    -moz-filter: grayscale(100%);
+		    -ms-filter: grayscale(100%); 
+		    -o-filter: grayscale(100%);
+		    filter: url(resources.svg#desaturate);
+		    filter: gray;
+		    -webkit-filter: grayscale(1);
+
+		    &:hover {
+		    	filter: grayscale(0%);
+			    -webkit-filter: grayscale(0%);
+			    -moz-filter: grayscale(0%);
+			    -ms-filter: grayscale(0%); 
+			    -o-filter: grayscale(0%);
+			    -webkit-filter: grayscale(0);
+		    }
+		}
+		.bottom {
+			position:relative;
+			margin-left:100px;
+			span {
+				display:block;
+				color:@white;
+				font-size:36px;
+				line-height:39px;
+				.bold;
+			}
+			b {
+				display:block;
+				color:@green;
+				font-size:36px;
+				line-height:39px;
+				.bold;
+			}
+			&:before {
+				content:'';
+				display:block;
+				width:68px;
+				height:4px;
+				position:absolute;
+				left:-100px;
+				top:22px;
+				background:@green;
+			}
+		}
+	}
+}
+
+/* photos */
+.photos {
+	.grid {
+		&-item {
+			width:33%; 			
+			padding:10px;
+			a {
+				display:block;
+				width:100%;
+				background:@green;
+				img {
+					display:block;
+					width:100%;
+				}
+			}			
+		}
+	}
+}
+
 /* contacts */
 .contacts {
 	h1 {
@@ -899,11 +1058,22 @@ h1 {
 .contacts {
 	.block {
 		position:relative;
+		z-index:2;
 		padding-bottom:26px;
 		.img {
 			position:absolute;
 			right:45px;
 			bottom:0px;
+		}
+		&:before {
+			content:'';
+			display:block;
+			width:4px;
+			height:68px;
+			position:absolute;
+			left:100px;
+			bottom:-30px;
+			background: @green;
 		}
 	}
 	.text {
@@ -944,6 +1114,8 @@ h1 {
 		&__wrapper {
 			position:relative;
 			#map {
+				position:relative;
+				z-index:1;
 				width:100%;
 				height:560px;
 				@media screen and (max-width: 1240px) and (min-width: 768px) {
