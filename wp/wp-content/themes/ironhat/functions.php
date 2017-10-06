@@ -39,3 +39,31 @@ function admin_phone_sc_func() {
 } 
 add_shortcode( 'admin_phone_sc', 'admin_phone_sc_func'); 
 
+
+
+/* add address field */
+class Add_Settings_Field__address {
+	public function __construct() {
+		add_action( 'admin_init' , array( $this , 'register_fields' ) );
+	}
+	public function register_fields() {
+		register_setting( 'general', 'admin_address', 'esc_attr' );
+		add_settings_field(
+			'admin_address_id',
+			'<label for="admin_address_id">' . __( 'Адреса' , 'admin_address' ) . '</label>',
+			array( $this, 'fields_html' ),
+			'general'
+		);
+	}
+	public function fields_html() {
+		$value = get_option( 'admin_address', '' );
+		echo '<textarea rows="5" id="admin_address_id" name="admin_address" >' . esc_attr( $value ) . '</textarea>';
+	}
+}
+new Add_Settings_Field__address();
+function admin_address_sc_func() {  
+	$str = get_option( 'admin_address', '' );
+	return $str;
+} 
+add_shortcode( 'admin_address_sc', 'admin_address_sc_func');
+

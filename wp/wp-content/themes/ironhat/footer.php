@@ -1,30 +1,32 @@
 	
 	<footer class="footer">
-		<div class="footer__top">
-			<div class="center">
+		<?php if ( !is_page( 'Contacts' ) ) : ?>
+			<div class="footer__top">
+				<div class="center">
 
-				<div class="block">
-					<div class="title">
-						Маєте запитання до нас? Хочете замовити столик чи будь, що інше?
-					</div>
-					<figure>
-						<img src="<?php echo get_template_directory_uri();?>/images/footer_bg.jpg" alt="">
-						<div class="label">
-							телефонуй чи пиши!
+					<div class="block">
+						<div class="title">
+							Маєте запитання до нас? Хочете замовити столик чи будь, що інше?
 						</div>
-					</figure>					
-					<div class="info">
-						<span class="top">							
-							<?php echo do_shortcode('[admin_phone_sc]'); ?>
-						</span>
-						<span class="bottom">
-							<?php echo get_bloginfo('admin_email'); ?>
-						</span>
+						<figure>
+							<img src="<?php echo get_template_directory_uri();?>/images/footer_bg.jpg" alt="">
+							<div class="label">
+								телефонуй чи пиши!
+							</div>
+						</figure>					
+						<div class="info">
+							<span class="top">							
+								<?php echo do_shortcode('[admin_phone_sc]'); ?>
+							</span>
+							<span class="bottom">
+								<?php echo get_bloginfo('admin_email'); ?>
+							</span>
+						</div>
 					</div>
-				</div>
 
+				</div>
 			</div>
-		</div>
+		<?php endif;?>
 		<div class="footer__bottom">
 			<div class="center clearfix">
 				<div class="left copy">
