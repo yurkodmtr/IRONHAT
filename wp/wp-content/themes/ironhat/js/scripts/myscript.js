@@ -4,7 +4,7 @@ var siteScript = function(){
 
 	$('.mobile_nav__open').click(function(){
 		$('.mobile_nav').fadeIn();
-		$('body').css('overflow','hidden');
+		$('body').css('overflow','hidden'); 
 	});
 
 	$('.mobile_nav .close').click(function(){ 
@@ -30,6 +30,17 @@ var siteScript = function(){
 
 	$(window).load(function(){
 		homeMenuItemHeight();
+
+		$('.grid').masonry({
+		  	itemSelector: '.grid-item'
+		});
+
+		$('[data-fancybox]').fancybox({
+			loop : true,
+			buttons : [
+		        'close'
+		    ],
+		});
 	});
 
 	$(window).resize(function(){

@@ -1,15 +1,20 @@
 <?php
 
-function ironhat_scripts() {
-	wp_enqueue_style( 'ironhat-style', get_template_directory_uri() . '/css/main.min.css' );
+add_action('admin_head', 'my_custom_admin_styles');
 
+function my_custom_admin_styles() {
+  echo '<link rel="stylesheet" href="' . get_template_directory_uri() . '/admin-styles.css" type="text/css" media="all" />';
+}
+
+function ironhat_scripts() {
+	wp_enqueue_style( 'ironhat-style', get_template_directory_uri() . '/css/main.min.css?v=' . time() );
 	
 	wp_enqueue_script( 'ironhat-jq', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js' );
 	wp_enqueue_script( 'ironhat-js', get_template_directory_uri() . '/js/app.js', array(), '20151215', true );
-
-
 }
 add_action( 'wp_enqueue_scripts', 'ironhat_scripts' );
+
+
 
 
 

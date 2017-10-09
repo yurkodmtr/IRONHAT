@@ -19,7 +19,7 @@
 				<a href="#" class="logo">
 					<img src="<?php echo get_template_directory_uri();?>/images/header_logo.png" alt="">
 				</a>
-			<?php endif;?>
+			<?php endif;?> 
 
 			<div class="mobile_nav__open"></div>
 			<ul class="nav">

@@ -15,7 +15,7 @@ $options = array(
 		'label'        => __('googleMapLat', '{domain}'),
 		'type'         => 'text'
 	),
-	'googleMapLng' => array(
+	'googlemaplng' => array(
 		'label'        => __('googleMapLng', '{domain}'),
 		'type'         => 'text'
 	),
