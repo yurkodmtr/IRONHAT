@@ -12,37 +12,49 @@
 
 <div class="wrap">
 
-	<header class="header">
+	<?php
+		$header_class = '';
+		if ( !is_front_page() ) {
+			$header_class = 'header_with_logo';
+		}
+	?>
+	<header class="header <?php echo $header_class;?>">
 		<div class="center clearfix">
 
-			<?php if ( !is_home() ) : ?>
-				<a href="#" class="logo">
-					<img src="<?php echo get_template_directory_uri();?>/images/header_logo.png" alt="">
+			<?php if ( !is_front_page() ) : ?>
+				<a href="/" class="logo">
+					<img src="<?php echo get_template_directory_uri();?>/images/logo.svg" alt="">
 				</a>
 			<?php endif;?> 
 
 			<div class="mobile_nav__open"></div>
 			<ul class="nav">
-				<li class="active">
-					<a href="#">Про паб</a>
+				<li>
+					<a href="/about/">Про паб </a>
 				</li>
 				<li>
-					<a href="#">Меню</a>
+					<a href="/menu/">Меню</a>
 				</li>
 				<li>
-					<a href="#">Кальян</a>
+					<a href="/hookah/">Кальян</a>
 				</li>
 				<li>
-					<a href="#">Концерты</a>
+					<a href="/concerts/">Концерты</a>
 				</li>
 				<li>
-					<a href="#">Галерея</a>
+					<a href="/gallery/">Галерея</a>
 				</li>   
 				<li>
-					<a href="#">Контакти</a>
+					<a href="/contacts/">Контакти</a>
 				</li>                            
-			</ul>			
-			<figure class="header_img">
+			</ul>
+			<?php
+				$header_img_class = '';
+				if ( !is_front_page() ) {
+					$header_img_class = 'header_with_logo';
+				}
+			?>						
+			<figure class="header_img <?php echo $header_img_class; ?>">
 				<img src="<?php echo get_template_directory_uri();?>/images/header_img.png" alt="">
 			</figure>			
 		</div>
@@ -53,23 +65,26 @@
 			<div class="table-cell">
 				<div class="close"></div>
 				<ul>
-					<li class="active">
-						<a href="#">Про паб</a>
+					<li>
+						<a href="/">головна</a>
 					</li>
 					<li>
-						<a href="#">Меню</a>
+						<a href="/about/">Про паб</a>
 					</li>
 					<li>
-						<a href="#">Кальян</a>
+						<a href="/menu/">Меню</a>
 					</li>
 					<li>
-						<a href="#">Концерты</a>
+						<a href="/hookah/">Кальян</a>
 					</li>
 					<li>
-						<a href="#">Галерея</a>
+						<a href="/concerts/">Концерты</a>
+					</li>
+					<li>
+						<a href="/gallery/">Галерея</a>
 					</li>   
 					<li>
-						<a href="#">Контакти</a>
+						<a href="/contacts/">Контакти</a>
 					</li>                            
 				</ul>	
 			</div>
