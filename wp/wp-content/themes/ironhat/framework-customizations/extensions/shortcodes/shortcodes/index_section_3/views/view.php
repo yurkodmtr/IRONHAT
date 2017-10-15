@@ -20,7 +20,7 @@
 					<?php echo do_shortcode( $atts['tab_id_1_descr'] ); ?>					
 				</div>
 				<ul>
-					<li>
+					<li class="color_green">
 						<?php echo do_shortcode( $atts['tab_id_1_value_1'] ); ?>
 					</li>
 					<li>

@@ -3,7 +3,8 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
 	<?php wp_head(); ?>
 </head>
@@ -39,7 +40,7 @@
 					<a href="/hookah/">Кальян</a>
 				</li>
 				<li>
-					<a href="/concerts/">Концерты</a>
+					<a href="/concerts/">Концерти</a>
 				</li>
 				<li>
 					<a href="/gallery/">Галерея</a>
@@ -78,7 +79,7 @@
 						<a href="/hookah/">Кальян</a>
 					</li>
 					<li>
-						<a href="/concerts/">Концерты</a>
+						<a href="/concerts/">Концерти</a>
 					</li>
 					<li>
 						<a href="/gallery/">Галерея</a>

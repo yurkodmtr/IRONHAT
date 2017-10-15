@@ -53,10 +53,19 @@ var siteScript = function(){
 		if ( $('.about').length < 1 ) {
 			return false;
 		}		
-		var h1 = parseInt($('.about .about__rocket_2').css('top'), 10);
+		var h1 = parseInt($('.about .about__rocket_1').css('top'), 10);
+		var h2 = parseInt($('.about .about__rocket_2').css('top'), 10);
+		var h3 = parseInt($('.about .about__rocket_3').css('top'), 10);
+
 		$(window).scroll(function(){ 
 			var h = $(window).scrollTop();	
-			$('.about .about__rocket_2').css('top', (h1+(h*0.07)) + 'px');
+			$('.about .about__rocket_2').css('top', (h2+(h*0.07)) + 'px');
+			if ( h > (h1-200) ){
+				$('.about .about__rocket_1').css('bottom', -(230+(h2+(h*0.12))) + 'px');
+			}
+			if ( h > (h3-400) ){
+				$('.about .about__rocket_3').css('top', h3+(h*0.07) + 'px');
+			}
 		});
 	}
 

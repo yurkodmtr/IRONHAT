@@ -4,7 +4,7 @@
 	}
 ?>
 
-<div class="menu_page">
+<div class="menu_page"> 
 	<div class="center">
 
 		<h1 class="tac"><?php echo do_shortcode( $atts['title'] ); ?></h1>
@@ -17,22 +17,46 @@
 
 		<div class="menu_page__content">
 			<article class="menu_page__content__ua act">
-				<img src="<?php echo do_shortcode( $atts['tab_ua_image_1']['url'] ); ?>">
-				<img src="<?php echo do_shortcode( $atts['tab_ua_image_2']['url'] ); ?>">
-				<img src="<?php echo do_shortcode( $atts['tab_ua_image_3']['url'] ); ?>">
-				<img src="<?php echo do_shortcode( $atts['tab_ua_image_4']['url'] ); ?>">
+				<a href="<?php echo do_shortcode( $atts['tab_ua_image_1']['url'] ); ?>" data-fancybox="gallery_menu_ua">
+					<img src="<?php echo aq_resize( $atts['tab_ua_image_1']['url'], 1170, true ); ?>" alt="">
+				</a>
+				<a href="<?php echo do_shortcode( $atts['tab_ua_image_2']['url'] ); ?>" data-fancybox="gallery_menu_ua">
+					<img src="<?php echo aq_resize( $atts['tab_ua_image_2']['url'], 1170, true ); ?>" alt="">
+				</a>
+				<a href="<?php echo do_shortcode( $atts['tab_ua_image_3']['url'] ); ?>" data-fancybox="gallery_menu_ua">
+					<img src="<?php echo aq_resize( $atts['tab_ua_image_3']['url'], 1170, true ); ?>" alt="">
+				</a>
+				<a href="<?php echo do_shortcode( $atts['tab_ua_image_4']['url'] ); ?>" data-fancybox="gallery_menu_ua">
+					<img src="<?php echo aq_resize( $atts['tab_ua_image_4']['url'], 1170, true ); ?>" alt="">
+				</a>
 			</article>
 			<article class="menu_page__content__pl">
-				<img src="<?php echo do_shortcode( $atts['tab_pl_image_1']['url'] ); ?>">
-				<img src="<?php echo do_shortcode( $atts['tab_pl_image_2']['url'] ); ?>">
-				<img src="<?php echo do_shortcode( $atts['tab_pl_image_3']['url'] ); ?>">
-				<img src="<?php echo do_shortcode( $atts['tab_pl_image_4']['url'] ); ?>">
+				<a href="<?php echo do_shortcode( $atts['tab_pl_image_1']['url'] ); ?>" data-fancybox="gallery_menu_pl">
+					<img src="<?php echo aq_resize( $atts['tab_pl_image_1']['url'], 1170, true ); ?>" alt="">
+				</a>
+				<a href="<?php echo do_shortcode( $atts['tab_pl_image_2']['url'] ); ?>" data-fancybox="gallery_menu_pl">
+					<img src="<?php echo aq_resize( $atts['tab_pl_image_2']['url'], 1170, true ); ?>" alt="">
+				</a>
+				<a href="<?php echo do_shortcode( $atts['tab_pl_image_3']['url'] ); ?>" data-fancybox="gallery_menu_pl">
+					<img src="<?php echo aq_resize( $atts['tab_pl_image_3']['url'], 1170, true ); ?>" alt="">
+				</a>
+				<a href="<?php echo do_shortcode( $atts['tab_pl_image_4']['url'] ); ?>" data-fancybox="gallery_menu_pl">
+					<img src="<?php echo aq_resize( $atts['tab_pl_image_4']['url'], 1170, true ); ?>" alt="">
+				</a>
 			</article>
 			<article class="menu_page__content__en">
-				<img src="<?php echo do_shortcode( $atts['tab_en_image_1']['url'] ); ?>">
-				<img src="<?php echo do_shortcode( $atts['tab_en_image_2']['url'] ); ?>">
-				<img src="<?php echo do_shortcode( $atts['tab_en_image_3']['url'] ); ?>">
-				<img src="<?php echo do_shortcode( $atts['tab_en_image_4']['url'] ); ?>">
+				<a href="<?php echo do_shortcode( $atts['tab_en_image_1']['url'] ); ?>" data-fancybox="gallery_menu_en">
+					<img src="<?php echo aq_resize( $atts['tab_en_image_1']['url'], 1170, true ); ?>" alt="">
+				</a>
+				<a href="<?php echo do_shortcode( $atts['tab_en_image_2']['url'] ); ?>" data-fancybox="gallery_menu_en">
+					<img src="<?php echo aq_resize( $atts['tab_en_image_2']['url'], 1170, true ); ?>" alt="">
+				</a>
+				<a href="<?php echo do_shortcode( $atts['tab_en_image_3']['url'] ); ?>" data-fancybox="gallery_menu_en">
+					<img src="<?php echo aq_resize( $atts['tab_en_image_3']['url'], 1170, true ); ?>" alt="">
+				</a>
+				<a href="<?php echo do_shortcode( $atts['tab_en_image_4']['url'] ); ?>" data-fancybox="gallery_menu_en">
+					<img src="<?php echo aq_resize( $atts['tab_en_image_4']['url'], 1170, true ); ?>" alt="">
+				</a>
 			</article>			
 		</div>
 
