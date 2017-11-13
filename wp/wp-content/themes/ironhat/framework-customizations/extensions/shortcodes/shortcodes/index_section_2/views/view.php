@@ -24,7 +24,7 @@
 			<span>
 				<?php echo do_shortcode( $atts['title'] ); ?>
 			</span>
-			<a href="#">Розклад iншіх концертів</a>
+			<a href="/concerts/">Розклад iншіх концертів</a>
 		</div>
 
 	</div>

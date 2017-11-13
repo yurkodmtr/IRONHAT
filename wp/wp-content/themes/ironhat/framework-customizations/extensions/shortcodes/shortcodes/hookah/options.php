@@ -13,6 +13,13 @@ $options = array(
 	    'desc'  => __('Description', '{domain}'),
 	    'images_only' => true,
 	),	
+
+	'is_visible' => array(
+	    'type'  => 'checkbox',
+	    'value' => true,
+	    'label' => __('Is visible image 1', '{domain}'),
+	    'text'  => __('Yes', '{domain}'),
+	),
 	'image_2'   => array(
 	    'type'  => 'upload',
 	    'label' => __('Image 2', '{domain}'),

@@ -15,7 +15,7 @@
 			<div class="descr">
 				<?php echo do_shortcode( $atts['descr'] ); ?>
 			</div>
-			<a href="#" class="more">Детальніше</a>
+			<a href="/about/" class="more">Детальніше</a>
 		</div>
 
 	</div>

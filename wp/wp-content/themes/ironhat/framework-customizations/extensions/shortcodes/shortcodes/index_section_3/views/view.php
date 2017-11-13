@@ -73,7 +73,7 @@
 						</li>
 					</ul>	
 				<?php endforeach; ?>
-				<a href="#" class="menu_more_btn">Весь асортимент</a>
+				<a href="/menu/" class="menu_more_btn">Весь асортимент</a>
 			</div>
 		</div>
 	</div>

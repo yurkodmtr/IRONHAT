@@ -6,7 +6,7 @@
 
 					<div class="block">
 						<div class="title">
-							Маєте запитання до нас? Хочете замовити столик чи будь, що інше?
+							Маєте запитання до нас? Хочете замовити столик чи будь-що інше?
 						</div>
 						<figure>
 							<img src="<?php echo get_template_directory_uri();?>/images/footer_bg.jpg" alt="">

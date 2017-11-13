@@ -17,12 +17,11 @@
         var map = new google.maps.Map(mapElement, mapOptions);
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(<?php echo do_shortcode( $atts['googlemaplat'] );?>, <?php echo do_shortcode( $atts['googlemaplng'] );?>),
-            icon: 'http://belikdesign.com/ironhat/images/google_map_marker.png',
+            icon: '<?php echo get_template_directory_uri();?>/images/google_map_marker.png',
             map: map
         });
     }
 </script>
-	
 <div class="content contacts">		
 	<div class="center">
 		<h1><?php echo do_shortcode( $atts['title'] ); ?></h1>
@@ -35,19 +34,19 @@
 					Телефонуй
 				</div>
 				<div class="text_2">
-					067 303 7788
+					<?php echo do_shortcode('[admin_phone_sc]'); ?>
 				</div>
 				<div class="title">
 					пиши
 				</div>
 				<div class="descr">
-					info@zalizna-shapka.com
+					<?php echo get_option('admin_email'); ?>
 				</div>
 				<div class="title">
 					Чи приходь
 				</div>
 				<div class="descr">
-					79000, Львівська обл., м. Львів, вулиця Театральна, 23
+					<?php echo do_shortcode('[admin_address_sc]'); ?>					
 				</div>
 			</div>
 			<img src="<?php echo get_template_directory_uri();?>/images/contact_large.png" alt="" class="img">
