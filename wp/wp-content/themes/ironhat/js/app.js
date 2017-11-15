@@ -108,6 +108,25 @@ var siteScript = function(){
 		$('html,body').animate({ scrollTop: 0 });	
 	});
 
+	var backToTop = function(){
+		var h = $(window).scrollTop();
+		if ( h > 100 ) {
+			$('.back_to_top').fadeIn();
+		} else {
+			$('.back_to_top').fadeOut();
+		}
+	}
+	$('.back_to_top').click(function(){
+		$("html, body").animate({ scrollTop: "0px" });
+	});
+
+	$(window).load(function(){
+		backToTop();
+	});
+	$(window).scroll(function(){
+		backToTop();
+	});
+
 	$(window).resize(function(){
 		homeMenuItemHeight();
 	});

@@ -1508,3 +1508,30 @@ h1 {
 	display:block;
 	clear:both;
 }
+
+.back_to_top {
+	cursor:pointer;
+	display:none;
+	width:50px;
+	height:50px;
+	position:fixed;
+	z-index:10;
+	right:20px;
+	bottom:20px;
+	background:#314d72;
+	svg {
+		position:absolute;
+		left:0px;
+		top:0px;
+		right:0px; 
+		bottom:0px;
+		margin:auto;
+		width:30px;
+		.transition(0.2s);
+	}
+	&:hover {
+		svg {
+			top:-5px;
+		}
+	}
+}
