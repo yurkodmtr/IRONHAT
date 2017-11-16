@@ -30,7 +30,7 @@
 		<div class="footer__bottom">
 			<div class="center clearfix">
 				<div class="left copy">
-					&copy; <?php echo date("Y"); ?> Zalizna-shapka. <br> Всі права захищені
+					&copy; <?php echo date("Y"); ?> Zaliznashapka. <br> Всі права захищені
 				</div>
 				<div class="right by">
 					Розробка сайту - <a href="http://belikdesign.com/" target="_blank">Belikdesign.com</a>
